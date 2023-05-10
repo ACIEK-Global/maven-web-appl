@@ -12,9 +12,9 @@ pipeline{
     }
     stage('3Test+Build'){
       steps{
-        sh "echo 'running JUnit-test' "
-        sh "echo 'testing must passed to create artifacts ' "
-        sh "mvn clean package"
+        bat "echo 'running JUnit-test' "
+        bat "echo 'testing must passed to create artifacts ' "
+        bat "mvn clean package"
       }
     }
     /*
