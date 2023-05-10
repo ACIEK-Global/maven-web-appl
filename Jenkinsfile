@@ -12,7 +12,7 @@ pipeline{
     }
     stage('3Test+Build'){
       steps{
-        bat "echo 'running JUnit-test-cases' "
+        bat "echo 'running JUnit-test-case' "
        bat "echo 'testing must passed to create artifacts ' "
         bat "mvn clean package"
       }
