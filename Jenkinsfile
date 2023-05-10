@@ -7,14 +7,14 @@ pipeline{
     stage('1GetCode'){
       steps{
         bat "echo 'cloning the latest application version' "
-        git branch: 'feature', credentialsId: 'gitHubCredentials', url: 'https://github.com/ACIEK-Global/maven-web-appl'
+       
       }
     }
     stage('3Test+Build'){
       steps{
-        sh "echo 'running JUnit-test-cases' "
-        sh "echo 'testing must passed to create artifacts ' "
-        sh "mvn clean package"
+        bat "echo 'running JUnit-test-cases' "
+       bat "echo 'testing must passed to create artifacts ' "
+        bat "mvn clean package"
       }
     }
     /*
