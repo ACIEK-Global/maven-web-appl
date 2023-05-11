@@ -6,7 +6,7 @@ pipeline{
   stages{
     stage('GitClone'){
       steps{
-        echo "cloning the lastest applications version"
+        echo "cloning the lastest applications "
         git "https://github.com/LandmakTechnology/maven-web-application"
       }
     }
